@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>NHL Stat Trends</title>
+
+    <link rel="stylesheet" th:href="@{/js/bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+
+
+    <script type="text/javascript" th:src="@{/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/client.js}"></script>
+</head>
+<body>
+<header class="container">
+    <div class="row text-center">
+        <h1>NHL Trends</h1>
+        </div>
+    <div class="row text-center">
+        <h2>Regular Season v. Playoffs</h2>
+    </div>
+
+</header>
+<section class="jumbotron">
+<div class="container">
+    <div class="row text-center">
+<form>
+    <input type="text" id="searchForApi" placeholder="Enter Season"/>
+    <input type="text" id="numForApi" placeholder="Enter Team"/>
+
+    <button id="searchbtn">Search</button>
+</form>
+    </div>
+</div>
+</section>
+<br/>
+<footer class="container">
+    <div class="row">
+       <p class="col-sm-4">&copy;
+       President's Cup Winners</p>
+        </div>
+
+
+</footer>
+
+<div class="container">
+    <div class="NHL Stat Trends">
+        <div class="row text-center">
+        <h4>President's Cup Winner </h4>
+            <h5> vs.</h5>
+        <h4> Stanley Cup Winner</h4>
+        </div>
+        <button id="btn1">President's Cup Winner</button>
+        <button id="btn2">Stanley Cup Winner</button>
+    </div>
+</div>
+
+</body>
+</html>

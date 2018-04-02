@@ -21,7 +21,8 @@ function enabled() {
         //function getApiViaServer() {
          $.ajax({
             type: "GET",
-             url: "https://api.mysportsfeeds.com/v1.2/pull/nhl/2016-playoff/full_game_schedule.json",
+             url: "https://api.mysportsfeeds.com/v1.2/pull/nhl/2017-playoff/overall_team_standings.json?teamstats=W,L,GF,GA,Pts",
+                 // "https://api.mysportsfeeds.com/v1.2/pull/nhl/2016-playoff/full_game_schedule.json",
              dataType: 'json',
              headers: {
                 "Authorization": "Basic " + btoa("NHL2018:GCU2018")
